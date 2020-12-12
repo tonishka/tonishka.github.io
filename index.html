@@ -1,7 +1,239 @@
----
-layout: default
-title: Tonishka Singh
----
-<div class="blurb">
-	<h1>Hi there, I'm Tonishka.</h1>
-</div><!-- /.blurb -->
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<title>Tonishka Singh</title>
+        <--! link rel = "icon" type = "image/png" href = "img/code.png" -->
+		<link href = "https://fonts.googleapis.com/css?family=Raleway:300,300i,400|Quicksand:300,400" rel = "stylesheet">
+		<link rel = "stylesheet" href = "materialize.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+	</head>
+    
+    <body>
+        <div class = "home">
+            <div class = "navbar-fixed">
+				<nav class = "z-depth-0">
+				    <div class = "nav-wrapper">
+                        <a href = "#" data-activates = "mobile-demo" class = "button-collapse">
+                            <i class = "material-icons">menu</i>
+                        </a>
+                        <ul class = "right hide-on-med-and-down">
+                           <li><a href = "index.html">Home</a></li>
+                           <li><a href = "#about">About</a></li>
+                           <li><a href = "#education">Education</a></li>
+                           <li><a href = "#experience">Experience</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <ul class = "side-nav" id = "mobile-demo">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#education">Education</a></li>
+                <li><a href = "#experience">Experience</a></li>
+            </ul>
+            
+            <div class = "flex-container">
+                <h1 class = "animate1">Greetings fellow earthling.</h1>
+                <div class = "typed-box hide-on-med-and-down">
+                    <span id = "before-typed">I'm </span><span id = "typed"></span><span id = "cursor">|</span>
+                </div>
+                <h2 class = "animate2 hide-on-large-only">I'm Tonishka.</h2>
+            </div>
+            
+        </div>
+        
+        <div class = "container" id = "about">
+            
+            <div class = "section"></div>
+            <div class = "row">
+                <div class = "col s12">
+                    <h1 class = "header"></h1>
+                </div>
+
+                <div class = "col s8 offset-s2 m6 offset-m3 l4 offset-l4"><img src = "img/moi.jpg" class = "photo-rounded"></div>
+                <div class = "col s12">
+                    <p>Hello there. I'm Tonishka Singh. I'm 18 years old, and I study at the National University of Singapore. I was born on November 21, 2001 in Andheri, a bustling suburb of Mumbai. I enjoy problem-solving and have diverse interests, including robotics, programming, web design, filmmaking and participating in MUNs.</p>
+				    <p>My journey in robotics began when I became a part of the Metal Marauders, a private FTC team based in New Jersey. By exposing me to the various aspects of robotics, FTC helped deepen my passion for the STEM field and turned me into a better problem-solver. In addition, the program helped me learn how to pitch my ideas with others and helped me get involved with the community. I am extremely thankful to the other members of the team, who shared their knowledge with me and supported me throughout the season.</p>
+				    <p>My biggest achievement, till date, has been to bounce back from a failed robot run to secure the silver medal among 450+ teams globally at the World Robot Olympiad.</p>
+                </div>
+            </div>   
+            
+            <div class = "section"></div>
+            <hr style = "size: 1.5px">
+            
+        </div>
+        
+        <div class = "container" id = "projects">
+            
+            <div class = "section"></div>
+            <div class = "row">
+                <div class = "col s12">
+                    <h1 class = "header">Projects</h1>
+                </div>
+            </div>
+            
+            <div class = "row lcard">
+                <div class = "col s12 m6">
+                    <div class = "card hoverable">
+                        <div class = "card-image waves-effect waves-block waves-light">
+                            <img src = "img/FTC15.jpg" class = "activator">
+                        </div>
+                        <div class = "card-stacked">
+                            <div class = "card-content">
+                                <span class = "card-title activator grey-text text-darken-4">FTC 2015<i class = "material-icons right">more_vert</i></span>
+                                <p>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience. Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks.</p>
+                            </div>
+                        </div>
+                        <div class = "card-reveal">
+                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
+                            <h5>Achievements</h5>
+                            <p>Inspire Award: Hudson Valley Qualifiers</p>
+                            <p>PTC Design Award: New Jersey State Championship</p>
+                            <p>Control Award: New York State Championship</p>
+                            <p>Finalist Alliance, 2nd pick: Vermont State Championship</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col s12 m6">
+                    <div class = "card hoverable">
+                        <div class = "card-image">
+                            <img src = "img/WRO16.jpg" class = "activator">
+                        </div>
+                        <div class = "card-stacked">
+                            <div class = "card-content"> 
+                                <span class = "card-title activator grey-text text-darken-4">WRO 2016<i class = "material-icons right">more_vert</i></span>
+                                <p>World Robot Olympiad is a global robotics competition for students. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The Regular Junior High challenge required a robot to autonomously identify and locate different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins (also differentiated by color and location), to sort the waste. Finally, to score points, the robot needed to pick the correct waste, deposit them in the bins, and return to the start area.</p>
+                            </div>
+                        </div>
+                        <div class = "card-reveal">
+                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
+                            <h5>Achievements</h5>
+                            <p>Delhi-NCR Regionals, 1st Position</p>
+                            <p>National Championships, 2nd Position</p>
+                            <p>International Championships, 2nd Position</p>
+                            <p>Featured on various newspapers, including the Times of India, Huffington Post and Hindustan Times</p>
+                            <p>Felicitated with a Certificate of Appreciation from the Government of Haryana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row lcard">
+                <div class = "col s12 m6">
+                    <div class = "card hoverable">
+                        <div class = "card-image">
+                            <img src = "img/FTC16.png" class = "activator">
+                        </div>
+                        <div class = "card-stacked">
+                            <div class = "card-content">
+                                <span class = "card-title activator grey-text text-darken-4">FTC 2016<i class = "material-icons right">more_vert</i></span>
+                                <p>Velocity Vortex, the 2016-17 edition of the FIRST Tech Challenge, required a robot to perform a variety of different tasks, ranging from projectile shooting to beacon color detection. We used omnidirectional wheels in order to develop a drivetrain capable of fully holonomic movement. Furthermore, we utilized the phone's camera in order to differentiate between beacon colors (via image processing), and designed a flicker mechanism for accurate projectile shooting.</p>
+                            </div>
+                        </div>
+                        <div class = "card-reveal">
+                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
+                            <h5>Achievements</h5>
+                            <p>Inspire Award, National Championships</p>
+                            <p>Winning Alliance Captain, National Championships</p>
+                            <p>FedEx Innovation Award, World Championships, St. Louis</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class = "col s12 m6">
+                    <div class = "card hoverable">
+                        <div class = "card-image">
+                            <img src = "img/AllRyde.jpg" class = "activator">
+                        </div>
+                        <div class = "card-stacked">
+                            <div class = "card-content">
+                                <span class = "card-title activator grey-text text-darken-4">AllRyde<i class = "material-icons right">more_vert</i></span>
+                                <p>Founded at MIT LaunchX, AllRyde aims to revolutionize road safety in India. With the aim of incentivizing safe driving, we developed a device that monitors helmet use and driving data via Android motion sensors. Data is collected on an array of different parameters, ranging from motorcycle speed to deceleration rates. Responsible motorcyclists are then entitled to lower insurance premiums, creating a positive feedback loop that motivates users to continue to drive safely.</p>
+                            </div>
+                        </div>
+                        <div class = "card-reveal">
+                            <span class = "card-title activator"><i class = "material-icons right">close</i></span>
+                            <h5>Achievements</h5>
+                            <p>Finalist, IILM Young Citizen Award</p>
+                            <p>1st Place, Enship, DPS RK Puram</p>
+                            <p>Selected as one of four students from Delhi-NCR to present the idea to Mr. Eric Schmidt, Executive Chairman, Alphabet Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row scard">
+                <div class = "col l6 m8 offset-m2 s10 offset-s1">
+                    <div class = "card hoverable" style = "width: 100%;">
+                        <div class = "card-image">
+                            <img src = "img/FTC15.jpg">
+                            <span class = "card-title">FTC 2015</span>
+                        </div>
+                        <div class = "card-content">                     
+                            <p>FIRST Tech Challenge is a robotics competition designed for students in grades 7-12. Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. Teams are also required to make an 'Engineering Notebook' that documents their build season and experience. Res-Q, the 2015-16 edition of the First Tech Challenge, challenged students to design and build robots capable of climbing ramps, depositing debris in designated areas and hanging, among other tasks. Our robot featured a robust drivetrain, a 3D-printed bucket for efficient collection of debris, as well as a cascading slide system capable of extending to maximum length in less than 4 seconds.</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class = "col l6 m8 offset-m2 s10 offset-s1">
+                    <div class = "card hoverable" style = "width: 100%;">
+                        <div class = "card-image">
+                            <img src = "img/WRO16.jpg">
+                            <span class = "card-title">WRO 2016</span>
+                        </div>
+                        <div class = "card-content">                     
+                            <p>World Robot Olympiad is a global robotics competition that brings together enthusiastic students from all across the world. The 2016 season, Rap the Scrap, was held in Delhi, India in November 2016. The Regular Junior High challenge required a robot to autonomously identify and locate different types of wastes (denoted by cubes of different sizes and colours) found inside the house, and take them to their respective bins, to sort the waste. The challenge required locating the waste bins (also differentiated by colors, and location), identifying different wastes available, and matching the wastes to their respective bins using an algorithm. Finally, to score points, the robot needed to pick the correct waste, deposit them in the bins, and return to the start area.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row scard">
+                <div class = "col l6 m8 offset-m2 s10 offset-s1">
+                    <div class = "card hoverable" style = "width: 100%;">
+                        <div class = "card-image">
+                            <img src = "img/FTC16.png">
+                            <span class = "card-title">FTC 2016</span>
+                        </div>
+                        <div class = "card-content">                     
+                            <p>Velocity Vortex, the 2016-17 edition of the FIRST Tech Challenge, required a robot to perform a variety of different tasks, ranging from projectile shooting to beacon color detection. We used omnidirectional wheels in order to develop a drivetrain capable of fully holonomic movement. Furthermore, we utilized the phone's camera in order to differentiate between beacon colors (via image processing), and designed a flicker mechanism for accurate projectile shooting.</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class = "col l6 m8 offset-m2 s10 offset-s1">
+                    <div class = "card hoverable" style = "width: 100%;">
+                        <div class = "card-image">
+                            <img src = "img/AllRyde.jpg">
+                            <span class = "card-title">AllRyde</span>
+                        </div>
+                        <div class = "card-content">                     
+                            <p>Founded at MIT LaunchX, AllRyde aims to revolutionize road safety in India. With the aim of incentivizing safe driving, we developed a device that monitors helmet use and driving data via Android motion sensors. Data is collected on an array of different parameters, ranging from motorcycle speed to deceleration rates. Responsible motorcyclists are then entitled to lower insurance premiums, creating a positive feedback loop for drivers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer class = "page-footer">
+            <div class = "container center-align" id = "footer">
+                <div class = "col s12">
+                    <p class = "center-align">Made with &hearts; by Tonishka Singh</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js" integrity = "sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin = "anonymous"></script>
+		<script src = "js/materialize.min.js"></script>
+        <script src = "js/typed.min.js"></script>
+		<script src = "js/main.js"></script>
+    </body>
+</html>
+
+    
