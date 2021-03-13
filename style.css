@@ -84,7 +84,7 @@ nav {
 
 .photo-rounded {
     display: block;
-    border-radius: 75% 100%;
+    border-radius: 100% 75% 75% 100%;
     width: 300px;
     margin: 0 auto;
     padding-top: 30px;
