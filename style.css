@@ -81,71 +81,10 @@ nav {
     height: 100vh;
 }
 
-#before-typed {
-    font-family: 'Roboto';
-    color: #fff;
-    font-weight: 300;
-    font-size: 42px;
-}
-
-#typed {
-    font-family: 'Roboto';
-    color: #fff;
-    font-weight: 300;
-    font-size: 42px;
-}
-
-.typed-box {
-    text-align: center;
-    margin: 0 auto;
-    width: 70%;
-    border: 2px solid #fff;
-    padding: 5px;
-}
-
-#cursor {
-    font-family: 'Roboto';
-    padding-left: 3px;
-    color: #fff;
-    font-size: 42px;
-    animation: blink 1s infinite;
-}
-
-@media all and (max-width: 1200px) {
-    .scard {
-       display: block;
-    }
-    
-    .lcard {
-        display: none;
-    }
-}
-
-@media all and (min-width: 1201px) {
-    .scard {
-       display: none;
-    }
-    
-    .lcard {
-        display: block;
-    }
-}
-
-.card.horizontal {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-@media all and (max-width: 320px) {
-    .hoverable {
-        z-index: 0;
-    }
-}
 
 .photo-rounded {
     display: block;
-    border-radius: 100%;
+    border-radius: 75%;
     width: 300px;
     margin: 0 auto;
     padding-top: 30px;
