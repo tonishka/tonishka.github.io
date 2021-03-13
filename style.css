@@ -5,6 +5,10 @@ html, body {
     margin: 0;
 }
 
+.text-slider-items { 
+        display: none; 
+    } 
+
 h1 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
