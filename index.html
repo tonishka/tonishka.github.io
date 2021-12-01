@@ -1,2 +1,79 @@
 <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>Tonishka Singh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;500&display=swap" rel="stylesheet">
+<style type="text/css">
+body {
+	font-size: 50px;
+	background: #01070f;
+    background-size: cover;
+    font-family: 'Source Code Pro', monospace; 
+    color: #f0f5fc;
+}
+
+#container {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	color: #2980b9;
+	border-right: 3px solid #2980b9;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+	<p>Hello there, I am</p>
+	<div id="text"></div>
+</div>
+
+<script type="text/javascript">
+
+
+var _CONTENT = [ "Tonishka.","a Software Engineer.", "an App Developer.", "a Writer.", "too lazy to finish this website." ];
+var _PART = 0;
+var _PART_INDEX = 0;
+var _INTERVAL_VAL;
+var _ELEMENT = document.querySelector("#text");
+function Type() { 
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+_INTERVAL_VAL = setInterval(Type, 100);
+
+</script>
+
+</body>
 </html>
