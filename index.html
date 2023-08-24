@@ -4,105 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-  <title>Tonishka Singh</title>
+  <title>Your Webpage</title>
+  <style>
+    /* Custom CSS */
+    /* Add any additional custom styles here */
+  </style>
 </head>
-<body class="bg-red-100 font-mono">
-  <header class="bg-stone-500 text-white py-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Tonishka Singh</h1>
-      <nav>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto">
+      <nav class="flex items-center justify-between">
+        <a href="#" class="text-xl font-semibold">Your Name</a>
         <ul class="flex space-x-6">
-          <li><a href="#about" class="hover:text-stone-500">About</a></li>
-          <li><a href="#experience" class="hover:text-stone-500">Experience</a></li>
-          <li><a href="#projects" class="hover:text-stone-500">Projects</a></li>
-          <li><a href="#resume" class="hover:text-stone-500">Resume</a></li>
-          <li><a href="#contact" class="hover:text-stone-500">Get in Touch</a></li>
+          <li><a href="#about" class="hover:text-gray-300">About</a></li>
+          <li><a href="#portfolio" class="hover:text-gray-300">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
-  <main class="class=container mx-auto px-4 md:px-8 py-8">
-    <!-- About Section -->
-    <section id="about" class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-      <p class="text-gray-700">This is a brief intro about me.</p>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Experience</h2>
-      <p class="text-gray-700">Will add my work experience here.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-      <div class="grid grid-cols-2 gap-6">
-        <div class="bg-white p-4 shadow-md rounded-lg">
-          <h3 class="text-lg font-semibold mb-2">Project 1</h3>
-          <p class="text-gray-700">Description of Project 1.</p>
+  <main class="bg-gray-100">
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-4 md:px-8">
+        <!-- About Section -->
+        <div id="about" class="mb-12">
+          <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+          <p class="text-gray-700">Write a brief introduction about yourself here.</p>
         </div>
-        <div class="bg-white p-4 shadow-md rounded-lg">
-          <h3 class="text-lg font-semibold mb-2">Project 2</h3>
-          <p class="text-gray-700">Description of Project 2.</p>
+
+        <!-- Portfolio Section -->
+        <div id="portfolio" class="mb-12">
+          <h2 class="text-3xl font-semibold mb-4">Portfolio</h2>
+          <!-- Add portfolio items here -->
         </div>
-		<div class="bg-white p-4 shadow-md rounded-lg">
-			<h3 class="text-lg font-semibold mb-2">Project 3</h3>
-			<p class="text-gray-700">Description of Project 3.</p>
-		  </div>
-		<div class="bg-white p-4 shadow-md rounded-lg">
-			<h3 class="text-lg font-semibold mb-2">Project 4</h3>
-			<p class="text-gray-700">Description of Project 4.</p>
-		  </div>
-        <!-- Add more projects here -->
+        
+        <!-- Contact Section -->
+        <div id="contact">
+          <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+          <p class="text-gray-700">Use the form or provide contact details for users to reach you.</p>
+          <form class="mt-4">
+            <!-- Add contact form fields here -->
+          </form>
+        </div>
       </div>
     </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Resume</h2>
-      <p class="text-gray-700">Provide a link to download your resume here.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Get in touch!</h2>
-      <p class="text-gray-700">Contact Me</p>
-      <form class="mt-4">
-        <div class="mb-4">
-          <label class="block text-sm font-semibold" for="name">Name</label>
-          <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg">
-        </div>
-        <div class="mb-4">
-          <label class="block text-sm font-semibold" for="email">Email</label>
-          <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg">
-        </div>
-        <div class="mb-4">
-          <label class="block text-sm font-semibold" for="message">Message</label>
-          <textarea id="message" name="message" class="w-full px-3 py-2 border rounded-lg"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Send</button>
-      </form>
-    </section>
-	<script>
-		document.getElementById("contact-form").addEventListener("submit", function (e) {
-		  e.preventDefault();
-		  
-		  const name = document.getElementById("name").value;
-		  const email = document.getElementById("email").value;
-		  const message = document.getElementById("message").value;
-		  
-		  // Here you can add code to send the form data to a server or perform other actions.
-		  // For now, let's just show an alert.
-		  alert(`Thank you, ${name}!\nYour message has been sent.`);
-		  
-		  // Clear the form fields
-		  document.getElementById("name").value = "";
-		  document.getElementById("email").value = "";
-		  document.getElementById("message").value = "";
-		});
-	  </script>
   </main>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
