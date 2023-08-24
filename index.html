@@ -55,10 +55,7 @@ a:visited {
 
 <body>
 
-<div id="container">
-	<p>Hello there, I am</p>
-	<div id="text"></div>
-</div>
+<h1> CURRENTLY UPDATING WEBSITE UNTIL 21 AUG 2023 </h1>
 
 <div id="links">
 	<a>resume</a>
@@ -80,45 +77,5 @@ a:visited {
 		and engaging in silly philosophical debates with my friends (is chocolate responsible for the moral downfall of society?). 
 		</p>
 </div>
-
-<script type="text/javascript">
-
-
-var _CONTENT = [ "Tonishka.","a Software Engineer.", "a Web Developer.", "a UI Designer.", "a lover of barebones websites." ];
-var _PART = 0;
-var _PART_INDEX = 0;
-var _INTERVAL_VAL;
-var _ELEMENT = document.querySelector("#text");
-function Type() { 
-	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-	_ELEMENT.innerHTML = text;
-	_PART_INDEX++;
-	if(text === _CONTENT[_PART]) {
-		clearInterval(_INTERVAL_VAL);
-		setTimeout(function() {
-			_INTERVAL_VAL = setInterval(Delete, 50);
-		}, 1000);
-	}
-}
-function Delete() {
-	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
-	_ELEMENT.innerHTML = text;
-	_PART_INDEX--;
-	if(text === '') {
-		clearInterval(_INTERVAL_VAL);
-		if(_PART == (_CONTENT.length - 1))
-			_PART = 0;
-		else
-			_PART++;
-		_PART_INDEX = 0;
-		setTimeout(function() {
-			_INTERVAL_VAL = setInterval(Type, 100);
-		}, 200);
-	}
-}
-_INTERVAL_VAL = setInterval(Type, 100);
-
-</script>
-
 </body>
 </html>
