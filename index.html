@@ -4,7 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
-  <title>Your Portfolio</title>
+  <title>Tonishka Singh</title>
+  <style>
+    /* Custom CSS to override Tailwind CSS classes */
+    .bg-pink {
+      background-color: #FF6B98; /* Custom pink color */
+    }
+    .text-pink {
+      color: #FF6B98; /* Custom pink color */
+    }
+    .border-pink {
+      border-color: #FF6B98; /* Custom pink color */
+    }
+    .hover:bg-pink:hover {
+      background-color: #FF6B98; /* Custom pink color */
+    }
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
   <header class="bg-blue-500 text-white py-4">
@@ -12,18 +27,17 @@
       <h1 class="text-2xl font-bold">Tonishka Singh</h1>
       <nav>
         <ul class="flex space-x-6">
-          <li><a href="#about" class="hover:text-blue-300">About</a></li>
-          <li><a href="#experience" class="hover:text-blue-300">Experience</a></li>
-          <li><a href="#projects" class="hover:text-blue-300">Projects</a></li>
-		  <li><a href="#activities" class="hover:text-blue-300">Activities</a></li>
-          <li><a href="#resume" class="hover:text-blue-300">Resume</a></li>
-          <li><a href="#contact" class="hover:text-blue-300">Get in Touch</a></li>
+          <li><a href="#about" class="hover:text-pink">About</a></li>
+          <li><a href="#experience" class="hover:text-pink">Experience</a></li>
+          <li><a href="#projects" class="hover:text-pink">Projects</a></li>
+          <li><a href="#resume" class="hover:text-pink">Resume</a></li>
+          <li><a href="#contact" class="hover:text-pink">Get in Touch</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
-  <main class="container mx-auto py-8">
+  <main class="class=container mx-auto px-4 md:px-8 py-8">
     <!-- About Section -->
     <section id="about" class="mb-8">
       <h2 class="text-2xl font-semibold mb-4">About Me</h2>
