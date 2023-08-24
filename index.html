@@ -1,81 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<title>Tonishka Singh</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
-<style type="text/css">
-body {
-	font-size: 40px;
-	background: #373e98;
-    background-size:cover;
-    font-family:Inter; 
-    color:#dfdce3;
-}
-
-#container {
-	margin: 50px 0 0 0;
-	text-align: center;
-	font-weight: bold;
-}
-
-#text {
-	display: inline-block;
-	color: #f16775;
-	border-right: 3px solid #2980b9;
-	font-weight: bold;
-}
-
-#intro {
-	font-size: 20px;
-	margin-left: 25%;
-	margin-right: 25%;
-	display: inline-block;
-	text-align: left;
-	line-height: 200%;
-}
-
-#links {
-	font-size: 20px;
-	text-align: center;
-}
-
-a:link {
-	color: #ceb92c;
-}
-
-a:visited {
-	color: #ceb92c;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <title>Your Portfolio</title>
 </head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-blue-500 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Tonishka Singh</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-300">About</a></li>
+          <li><a href="#experience" class="hover:text-blue-300">Experience</a></li>
+          <li><a href="#projects" class="hover:text-blue-300">Projects</a></li>
+		  <li><a href="#activities" class="hover:text-blue-300">Activities</a></li>
+          <li><a href="#resume" class="hover:text-blue-300">Resume</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container mx-auto py-8">
+    <!-- About Section -->
+    <section id="about" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+      <p class="text-gray-700">This is a brief intro about me.</p>
+    </section>
 
-<body>
+    <!-- Experience Section -->
+    <section id="experience" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+      <p class="text-gray-700">Will add my work experience here.</p>
+    </section>
 
-<h1> CURRENTLY UPDATING WEBSITE UNTIL 21 AUG 2023 </h1>
+    <!-- Projects Section -->
+    <section id="projects" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+      <div class="grid grid-cols-2 gap-6">
+        <div class="bg-white p-4 shadow-md rounded-lg">
+          <h3 class="text-lg font-semibold mb-2">Project 1</h3>
+          <p class="text-gray-700">Description of Project 1.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+          <h3 class="text-lg font-semibold mb-2">Project 2</h3>
+          <p class="text-gray-700">Description of Project 2.</p>
+        </div>
+        <!-- Add more projects here -->
+      </div>
+    </section>
 
-<div id="links">
-	<a>resume</a>
-	<a href="https://github.com/tonishka">github</a>
-	<a href="https://linkedin.com/in/tonishkasingh">linkedin</a>
-	<a>contact me</a>
-</div>
+    <!-- Resume Section -->
+    <section id="resume" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Resume</h2>
+      <p class="text-gray-700">Provide a link to download your resume here.</p>
+    </section>
 
-<div id="intro"> 
-	<p>
-		Hello there! I’m Tonishka Singh.
-		 I’m a student developer based in Singapore, 
-		 and I’m currently pursuing a degree in Computer Science from the National University of Singapore. <br>
-		
-		 I’m passionate about working on innovative products and projects that positively impact the community and challenge me as a developer.
-		  To that end, I’ve interned at a variety of companies as a UI/UX Developer, Frontend Developer, and a Software Engineer. <br>
-		
-		Outside tech, I enjoy reading, watching movies, browsing reddit, practicing yoga, making memes, 
-		and engaging in silly philosophical debates with my friends (is chocolate responsible for the moral downfall of society?). 
-		</p>
-</div>
+    <!-- Contact Section -->
+    <section id="contact" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+      <p class="text-gray-700">Use the form or provide contact details for users to reach you.</p>
+      <form class="mt-4">
+        <div class="mb-4">
+          <label class="block text-sm font-semibold" for="name">Name</label>
+          <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-semibold" for="email">Email</label>
+          <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-semibold" for="message">Message</label>
+          <textarea id="message" name="message" class="w-full px-3 py-2 border rounded-lg"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Send</button>
+      </form>
+    </section>
+	<script>
+		document.getElementById("contact-form").addEventListener("submit", function (e) {
+		  e.preventDefault();
+		  
+		  const name = document.getElementById("name").value;
+		  const email = document.getElementById("email").value;
+		  const message = document.getElementById("message").value;
+		  
+		  // Here you can add code to send the form data to a server or perform other actions.
+		  // For now, let's just show an alert.
+		  alert(`Thank you, ${name}!\nYour message has been sent.`);
+		  
+		  // Clear the form fields
+		  document.getElementById("name").value = "";
+		  document.getElementById("email").value = "";
+		  document.getElementById("message").value = "";
+		});
+	  </script>
+  </main>
 </body>
 </html>
