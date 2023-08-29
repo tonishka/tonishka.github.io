@@ -1,0 +1,161 @@
+body {
+  transition: all 0.15s linear;
+}
+
+p {
+  text-align: left;
+}
+
+.about-body {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.about-body img {
+  max-height: 150px;
+  border: 1px solid hsla(240, 6%, 26%, 0.2);
+  margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+  .about-body {
+      display: block;
+  }
+
+  .about-body img {
+      display: none;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+i.fa {
+  color: hsl(0, 6%, 10%);
+  margin-right: 10px;
+  transition: all 0.15s linear;
+}
+
+.latex-dark i.fa {
+  color: hsl(0, 0%, 86%);
+}
+
+i.fa-envelope:hover {
+  color: #eeb211;
+}
+
+i.fa-linkedin:hover {
+  color: #4399FF;
+}
+
+i.fa-github:hover {
+  color: #b1b2b8;
+}
+
+i.fa-calendar:hover {
+  color: #d34f38;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.experience-header {
+  display: flex;
+  margin: 0;
+}
+
+.experience-header img {
+  max-height: calc(2.35rem + 10px);
+  margin: 26px 15px 0 0;
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 15px 0 0 0;
+}
+
+.experience-subtitle {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.experience-date {
+  font-size: 1rem;
+  font-variant: small-caps;
+  margin: 7px 0;
+}
+
+.skills {
+  margin: 14px 0 18px 0;
+}
+
+.skills span {
+  font-size: 0.95rem;
+  color: hsla(240, 6%, 26%, 0.8);
+  border: 1px solid hsla(240, 6%, 26%, 0.2);
+  border-radius: 5px;
+  padding: 2px 7px;
+  white-space: nowrap;
+  transition: all 0.15s linear;
+}
+
+.skills span:hover {
+  color: hsla(0, 6%, 10%, 1);
+  border: 1px solid hsla(0, 6%, 10%, 1);
+  cursor: pointer;
+}
+
+.latex-dark .skills span {
+  color: hsla(0, 0%, 86%, 0.7);
+  border: 1px solid hsla(0, 0%, 86%, 0.1);
+}
+
+.latex-dark .skills span:hover {
+  color: hsla(0, 0%, 86%, 1);
+  border: 1px solid hsla(0, 0%, 86%, 1);
+}
+
+ul, .project-body p {
+  margin: 0;
+}
+
+.project-body {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.project-body img {
+  max-height: 150px;
+  border: 1px solid hsla(240, 6%, 26%, 0.2);
+  margin-top: 3px;
+}
+
+@media (max-width: 640px) {
+  .project-body {
+      display: block;
+  }
+
+  .project-body img {
+      margin-bottom: 10px;
+  }
+}
+
+#dark-mode-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+}
+
+#dark-mode-toggle-icon {
+  font-size: 18px;
+}
